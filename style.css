@@ -39,10 +39,30 @@
 
 }
 
+.boton{
+    
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 200px;
+    background-color: #DD1919 ;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border:#f2f2f2;
+    
+}
+
+.boton:hover {
+    background-color: black;
+    
+}
+
 @media screen and (max-width: 600px){
-    .topnav a :not(:first-child){
+    /* .topnav a :not(:first-child){
         display:none;
-    }
+    } */
     .topnav a.icon{
         float:right;
         display: block;
