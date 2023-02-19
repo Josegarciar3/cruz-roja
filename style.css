@@ -44,20 +44,48 @@
     position: absolute;
     margin-top: -200px;
     margin-left: 200px;
-    background-color: #DD1919 ;
+    background: #DD1919 ;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 8px;
     width: 200px;
     height: 50px;
     font-size: 20px;
-    border:#f2f2f2;
+    border:2px solid #f2f2f2;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
     
+}
+
+.boton:before{
+    content: "";
+    position: absolute;
+    background: #19aae6;
+    height: 150px;
+    width: 300px;
+    border-radius: 80%;
+    z-index: -1;
 }
 
 .boton:hover {
     background-color: black;
     
 }
+
+.boton:before{
+    top: 100%;
+    left: 100%;
+    transition: 0.7s;
+}
+
+.boton:hover:before{
+    top: -30px;
+    left: -30px;
+}
+
+
 
 @media screen and (max-width: 600px){
     /* .topnav a :not(:first-child){
